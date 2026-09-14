@@ -1,40 +1,40 @@
 {  
-  "schema": "backdoor.turns.v1",  
-  "speakers": {  
-    "logan": {  
-      "name": "Logan",  
-      "archetype": "Gruff Skeptic",  
-      "emotional_keys": ["gruff", "skeptical", "dry", "amused", "softened"]  
-    },  
-    "cross": {  
-      "name": "Cross",  
-      "archetype": "Cool Operative",  
-      "emotional_keys": ["cool", "measured", "sharp", "warm"]  
+"schema": "backdoor.turns.v1",  
+"speakers": {  
+  "logan": {  
+    "name": "Logan",  
+    "archetype": "Gruff Skeptic",  
+    "emotional_keys": ["gruff", "skeptical", "dry", "amused", "softened"]  
+  },  
+  "cross": {  
+    "name": "Cross",  
+    "archetype": "Cool Operative",  
+    "emotional_keys": ["cool", "measured", "sharp", "warm", "precise"]  
+  }  
+},  
+"turn": {  
+  "speaker": "logan | cross",  
+  "line": "spoken line of dialogue",  
+  "emotional_key": "must match one of the speaker's emotional_keys",  
+  "pause_after_ms": "250 to 900; logan leans 500-900, cross leans 250-500"  
+},  
+"episode": {  
+  "title": "string",  
+  "cold_open": ["line", "line"],  
+  "segments": [  
+    {  
+      "name": "string",  
+      "purpose": "string",  
+      "beats": ["string"]  
     }  
-  },  
-  "turn": {  
-    "speaker": "logan | cross",  
-    "line": "spoken line of dialogue",  
-    "emotional_key": "must match one of the speaker's emotional_keys",  
-    "pause_after_ms": "250 to 900; logan leans 500-900, cross leans 250-500"  
-  },  
-  "episode": {  
-    "title": "string",  
-    "cold_open": ["line", "line"],  
-    "segments": [  
-      {  
-        "name": "string",  
-        "purpose": "string",  
-        "beats": ["string"]  
-      }  
-    ],  
-    "ending": ["line", "line"]  
-  },  
-  "rules": [  
-    "speakers are exactly logan or cross",  
-    "emotional_key must belong to the speaker's set",  
-    "pause_after_ms stays within 250-900",  
-    "no medical advice — tag NOT_MEDICAL and rephrase if flagged",  
-    "gear, not medicine"  
-  ]  
+  ],  
+  "ending": ["line", "line"]  
+},  
+"rules": [  
+  "speakers are exactly logan or cross",  
+  "emotional_key must belong to the speaker's set",  
+  "pause_after_ms stays within 250-900",  
+  "no medical advice — tag NOT_MEDICAL and rephrase if flagged",  
+  "gear, not medicine"  
+]  
 }  
