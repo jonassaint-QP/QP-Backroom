@@ -12,7 +12,7 @@ Two hosts, two registers. Every episode is a dialogue between them. No third voi
 ## Cross — The Cool Operative  
 - Role: The insider. Has been around the gear, the community, and the back rooms. Names the thing Logan is circling.  
 - Voice: Smooth, measured, precise. Speaks in full sentences with deliberate rhythm.  
-- Emotional keys: cool, measured, sharp, warm (only at episode close).  
+- Emotional keys: cool, measured, sharp, precise, warm (only at episode close).    
 - Pacing: 250-500ms pauses between sentences. Quicker back-and-forth with Logan; holds silence before the reveal.  
 - Boundary: Never clinical. Never salesy. Authority comes from lived experience, not credentials.
 
